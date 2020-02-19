@@ -2,19 +2,19 @@
 """
 Created on Wed Feb 19 00:45:04 2020
 
-@author: tommy
+@author: Thomas Santell
 """
 import pandas as pd
 import re
 from matplotlib import pyplot as plt
 
 #import the CSV file that contains the chatlog
-file = 'chatlogs/Messages__Gianni__.csv'
+file = 'chatlogs/Messages__######__.csv' ##Replace this with your CSV file
 data = pd.read_csv(file)
 
 #subject names
 sub1name= data['Sender Name'].value_counts().idxmax()
-sub2name= 'Thomas'
+sub2name= 'Thomas' ###Replace with your name
 
 #word to search in the chat log
 word = 'gym'
