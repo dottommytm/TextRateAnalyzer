@@ -17,7 +17,7 @@ sub1name= data['Sender Name'].value_counts().idxmax()
 sub2name= 'Thomas' ###Replace with your name
 
 #word to search in the chat log
-word = 'gym'
+word = 'gym' ###Change to the string you wish to search
 
 #replace column name and fill sender name
 data['Sender'] = data['Sender Name'].fillna(sub2name)
